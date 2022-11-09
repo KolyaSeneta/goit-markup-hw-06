@@ -355,30 +355,41 @@
           <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
           <div class="modal-box">
             <form name="service">
-              <label for="">
-                <div class="modal-text">Ім'я</div>
-                <input type="text" class="input" />
-              </label>
-              <label for="">
-                <div class="modal-text">Телефон</div>
-                <input type="text" class="input" />
-              </label>
-              <label for="">
-                <div class="modal-text">Пошта</div>
-                <input type="text" class="input" />
-              </label>
-              <label for="">
-                <div class="modal-text">Коментар</div>
-                <textarea
-                  class="coments"
-                  name="feedback1"
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Введіть текст"
+              <label for="" class="modal-text">Ім'я</label>
+              <div class="from-row">
+                <input type="text" name="user_name" class="input user-modal" /><svg
+                  class="icon-modal icon-user"
+                  width="12"
+                  height="12"
                 >
-                </textarea>
-              </label>
+                  <use xlink:href="./images/sprite.svg#icon-user"></use>
+                </svg>
+              </div>
+              <label for="" class="modal-text">Телефон</label>
+              <div class="from-row">
+                <input type="text" name="user_number" class="input phone-modal" /><svg
+                  class="icon-modal icon-phone-modal"
+                  width="13"
+                  height="13"
+                >
+                  <use xlink:href="./images/sprite.svg#icon-phone-modal"></use>
+                </svg>
+              </div>
+
+              <label for="" class="modal-text">Пошта</label>
+              <div class="from-row">
+                <input type="text" name="user_mail" class="input mail-modal" /><svg
+                  class="icon-modal icon-mail-modal"
+                  width="15"
+                  height="12"
+                >
+                  <use xlink:href="./images/sprite.svg#icon-mail-modal"></use>
+                </svg>
+              </div>
+
+              <label for="" class="modal-text">Коментар</label>
+              <textarea class="coments" name="user_feedback" id="user_feedback" cols="30" rows="10">
+              </textarea>
             </form>
             <p class="modal-text2">
               Погоджуюся з розсилкою та приймаю
@@ -450,6 +461,19 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="email-input">
+            <p class="email-input-title">Підпишіться на розсилку</p>
+            <form action="" class="form-footer">
+              <label for="">
+                <input class="footer-email2" type="email" name="email" />
+              </label>
+              <button type="button" class="btn-email" placeholder="E-mail">
+                Підписатися<svg class="icon icon-telegram" width="24" height="24">
+                  <use xlink:href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>

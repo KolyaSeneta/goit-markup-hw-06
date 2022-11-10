@@ -23,6 +23,7 @@ body {
         left: 0;
         z-index: 999;
         background-color: rgba(0, 0, 0, 0.2);
+        transform: scale(1.5)
         
 }
 .modal {
@@ -90,7 +91,33 @@ body {
         margin-top: 20px;
         margin-bottom: 30px;
         letter-spacing: 0.03em;
+        margin-left: 36px;
 }
+.checkbox-label {
+    position: relative;
+    
+}
+ 
+.checkbox-modal {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 6px;
+    margin-left: 12px;
+
+}
+
+.checkbox-modal-icon {
+    position: absolute;
+    width: 16px;
+        height: 15px;
+    background-image: url(../images/icon-check-off.svg);
+    top: 4px;
+        margin-left: 12px;
+}
+.checkbox-modal:checked + .checkbox-modal-icon{
+    background-image: url(../images/icon-check-on.svg);
+}
+
 
 .btn-modal {
     font-weight: 700;
@@ -684,6 +711,7 @@ header {
     /* padding-top: 94px;
     padding-bottom: 94px; */
     background: #F5F4FA;
+    flex-wrap: wrap;
 }
 
 .list-team {
@@ -909,7 +937,9 @@ header {
         width: 358px;
             height: 50px;
             color: var(--text-white);
+            padding: 15px 16px;
 }
+
 .email-input-title {
     font-weight: 700;
         font-size: 14px;
@@ -931,12 +961,17 @@ header {
             outline: 0;
             fill: currentColor;
 }
-.input:hover +.icon-modal,
-.input:focus + .icon-modal{
-    border-color: var(--secondary-color);
+.input:hover + .icon-modal,
+.input:focus + .icon-modal {
     fill: var(--secondary-color);
     
 }
+.input:hover,
+.input:focus {
+    border-color: var(--secondary-color);
+}
+
+
 
 
 
@@ -947,7 +982,7 @@ header {
 
 .icon-modal {
     position: absolute;
-top: 50%;
+     top: 50%;
     left: 10px;
     transform: translateY(-50%);
 }

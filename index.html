@@ -354,8 +354,8 @@
           </button>
           <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
           <div class="modal-box">
-            <form name="service">
-              <label for="" class="modal-text">Ім'я</label>
+            <form action="#" name="service">
+              <label for="name" class="modal-text">Ім'я</label>
               <div class="from-row">
                 <input type="text" name="user_name" class="input user-modal" /><svg
                   class="icon-modal icon-user"
@@ -365,7 +365,7 @@
                   <use xlink:href="./images/sprite.svg#icon-user"></use>
                 </svg>
               </div>
-              <label for="" class="modal-text">Телефон</label>
+              <label for="number" class="modal-text">Телефон</label>
               <div class="from-row">
                 <input type="text" name="user_number" class="input phone-modal" /><svg
                   class="icon-modal icon-phone-modal"
@@ -376,7 +376,7 @@
                 </svg>
               </div>
 
-              <label for="" class="modal-text">Пошта</label>
+              <label for="mail" class="modal-text">Пошта</label>
               <div class="from-row">
                 <input type="text" name="user_mail" class="input mail-modal" /><svg
                   class="icon-modal icon-mail-modal"
@@ -387,17 +387,23 @@
                 </svg>
               </div>
 
-              <label for="" class="modal-text">Коментар</label>
+              <label for="feedback" class="modal-text">Коментар</label>
               <textarea class="coments" name="user_feedback" id="user_feedback" cols="30" rows="10">
               </textarea>
+              <div class="checkbox-label">
+                <label>
+                  <input class="checkbox-modal" type="checkbox" name="checkbox" />
+                  <span class="checkbox-modal-icon"></span>
+                  <p class="modal-text2">
+                    Погоджуюся з розсилкою та приймаю
+                    <a class="link-modal" href="#" target="_blank" rel="noopener noreferrer">
+                      Умови договору</a
+                    >
+                  </p>
+                </label>
+              </div>
+              <button type="button" class="btn-modal">Відправити</button>
             </form>
-            <p class="modal-text2">
-              Погоджуюся з розсилкою та приймаю
-              <a class="link-modal" href="#" target="_blank" rel="noopener noreferrer">
-                Умови договору</a
-              >
-            </p>
-            <button type="button" class="btn-modal">Відправити</button>
           </div>
         </div>
       </div>
@@ -464,11 +470,11 @@
           </div>
           <div class="email-input">
             <p class="email-input-title">Підпишіться на розсилку</p>
-            <form action="" class="form-footer">
-              <label for="">
-                <input class="footer-email2" type="email" name="email" />
+            <form action="#" class="form-footer">
+              <label for="email">
+                <input class="footer-email2" type="email" name="user_email" placeholder="E-mail" />
               </label>
-              <button type="button" class="btn-email" placeholder="E-mail">
+              <button type="button" class="btn-email">
                 Підписатися<svg class="icon icon-telegram" width="24" height="24">
                   <use xlink:href="./images/sprite.svg#icon-telegram"></use>
                 </svg>

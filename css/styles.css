@@ -114,7 +114,7 @@ body {
         height: 15px;
     background-image: url(../images/icon-check-off.svg);
     top: 4px;
-        margin-left: 12px;
+    margin-left: -22px;
 }
 .checkbox-modal:checked + .checkbox-modal-icon{
     background-image: url(../images/icon-check-on.svg);
@@ -588,7 +588,7 @@ header {
 }
 
 .main-title {
-    display: none;
+    visibility: hidden;
     margin: 0px;
     padding: 0px;
 
@@ -1185,7 +1185,7 @@ header {
 .title-primary {
     padding: 0px;
     margin: 0px;
-    display: none;
+    visibility: hidden;
 }
 
 .portfolio-list {

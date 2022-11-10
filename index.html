@@ -357,7 +357,7 @@
             <form action="#" name="service">
               <label for="name" class="modal-text">Ім'я</label>
               <div class="from-row">
-                <input type="text" name="user_name" class="input user-modal" /><svg
+                <input type="text" id="name" name="user_name" class="input user-modal" /><svg
                   class="icon-modal icon-user"
                   width="12"
                   height="12"
@@ -367,7 +367,7 @@
               </div>
               <label for="number" class="modal-text">Телефон</label>
               <div class="from-row">
-                <input type="text" name="user_number" class="input phone-modal" /><svg
+                <input type="text" id="number" name="user_number" class="input phone-modal" /><svg
                   class="icon-modal icon-phone-modal"
                   width="13"
                   height="13"
@@ -378,7 +378,7 @@
 
               <label for="mail" class="modal-text">Пошта</label>
               <div class="from-row">
-                <input type="text" name="user_mail" class="input mail-modal" /><svg
+                <input type="text" id="mail" name="user_mail" class="input mail-modal" /><svg
                   class="icon-modal icon-mail-modal"
                   width="15"
                   height="12"
@@ -386,10 +386,11 @@
                   <use xlink:href="./images/sprite.svg#icon-mail-modal"></use>
                 </svg>
               </div>
-
-              <label for="feedback" class="modal-text">Коментар</label>
-              <textarea class="coments" name="user_feedback" id="user_feedback" cols="30" rows="10">
-              </textarea>
+              <div>
+                <label for="feedback" class="modal-text">Коментар</label>
+                <textarea class="coments" name="user_feedback" id="feedback" cols="30" rows="10">
+                </textarea>
+              </div>
               <div class="checkbox-label">
                 <label>
                   <input class="checkbox-modal" type="checkbox" name="checkbox" />
@@ -402,7 +403,7 @@
                   </p>
                 </label>
               </div>
-              <button type="button" class="btn-modal">Відправити</button>
+              <button type="submit" class="btn-modal">Відправити</button>
             </form>
           </div>
         </div>
@@ -471,10 +472,10 @@
           <div class="email-input">
             <p class="email-input-title">Підпишіться на розсилку</p>
             <form action="#" class="form-footer">
-              <label for="email">
+              <label>
                 <input class="footer-email2" type="email" name="user_email" placeholder="E-mail" />
               </label>
-              <button type="button" class="btn-email">
+              <button type="submit" class="btn-email">
                 Підписатися<svg class="icon icon-telegram" width="24" height="24">
                   <use xlink:href="./images/sprite.svg#icon-telegram"></use>
                 </svg>

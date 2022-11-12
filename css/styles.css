@@ -825,6 +825,7 @@ header {
     display: inline-block;
     align-items: center;
     justify-content: center;
+    width: 413px;
 }
 
 .map {
@@ -1029,7 +1030,7 @@ header {
 .icon-modal {
     position: absolute;
      top: 50%;
-    left: 15px;
+    left: 12px;
     transform: translateY(-50%);
 }
 
